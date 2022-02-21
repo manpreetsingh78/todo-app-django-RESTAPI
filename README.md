@@ -1,4 +1,5 @@
 # todo-app
+
 Django admin User details:
 username: algobulls
 pass: algobulls
@@ -6,4 +7,9 @@ pass: algobulls
 Simple user details:
 username: newuser
 pass: algobulls
+
+Alternatice CODES are commented.....
+
+
+
 
