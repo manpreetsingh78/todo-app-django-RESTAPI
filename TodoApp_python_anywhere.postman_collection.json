@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "1cf0a1b6-c73c-4c14-93e5-0852728de7ed",
+		"name": "TodoApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User_1",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}",
+							"host": [
+								"{{url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "title",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "description",
+									"type": "default"
+								},
+								{
+									"key": "due_date",
+									"value": "2022-02-23",
+									"type": "default"
+								},
+								{
+									"key": "tags",
+									"value": "tag1 tag2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}",
+							"host": [
+								"{{url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "18",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "title_updated1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "description_updated",
+									"type": "text"
+								},
+								{
+									"key": "due_date",
+									"value": "2022-02-24",
+									"type": "text"
+								},
+								{
+									"key": "tags",
+									"value": "tag1 tag2 tag3",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "WORKING",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}1/",
+							"host": [
+								"{{url}}1"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}2/",
+							"host": [
+								"{{url}}2"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "algobulls",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "algobulls",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "User_2",
+			"item": [
+				{
+					"name": "List Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}",
+							"host": [
+								"{{url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "title",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "description",
+									"type": "default"
+								},
+								{
+									"key": "due_date",
+									"value": "2022-02-23",
+									"type": "default"
+								},
+								{
+									"key": "tags",
+									"value": "tag1 tag2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}",
+							"host": [
+								"{{url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "title_updated",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "description_updated",
+									"type": "text"
+								},
+								{
+									"key": "due_date",
+									"value": "2022-02-24",
+									"type": "text"
+								},
+								{
+									"key": "tags",
+									"value": "tag1 tag2 tag3",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "WORKING",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}3/",
+							"host": [
+								"{{url}}3"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy Copy",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}3/",
+							"host": [
+								"{{url}}3"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "username",
+						"value": "newuser",
+						"type": "string"
+					},
+					{
+						"key": "password",
+						"value": "algobulls",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "boss",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "boss",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
