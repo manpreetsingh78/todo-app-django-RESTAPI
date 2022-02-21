@@ -10,6 +10,6 @@ pass: algobulls
 
 Alternatice CODES are commented.....
 
-Hosted on : https://manpreetsingh79.pythonanywhere.com/api/
+Hosted on : https://manpreetsingh79.pythonanywhere.com/
 
 
